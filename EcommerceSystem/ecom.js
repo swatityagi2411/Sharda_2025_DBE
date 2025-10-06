@@ -1,6 +1,6 @@
 const {MongoClient}=require('mongodb');
 
-const uri='mongodb+srv://swatityagidgi:admin123@swaticluster.5axzawy.mongodb.net/?retryWrites=true&w=majority&appName=SwatiCluster';
+const uri= ;
 const client=new MongoClient(uri);
 
 const customers=[
