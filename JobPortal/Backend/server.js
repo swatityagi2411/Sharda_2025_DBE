@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb+srv://swatityagidgi:admin123@swaticluster.5axzawy.mongodb.net/Jobportal?retryWrites=true&w=majority&appName=SwatiCluster")
+mongoose.connect("process.env.MONGO_URI")
   .then(() => console.log(" Database connected"))
   .catch(err => console.log(err));
 
