@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-mongoose.connect('mongodb+srv://swatityagidgi:admin123@swaticluster.5axzawy.mongodb.net/UserDB?retryWrites=true&w=majority&appName=SwatiCluster');
+mongoose.connect(process.env.MONGO_URI);
 
 const userSchema= new mongoose.Schema(
     {
